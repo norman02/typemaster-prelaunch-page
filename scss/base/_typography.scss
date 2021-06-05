@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+h1, h2 {
+    color: $header-text-color;
+    text-transform: uppercase;
+}
+
+h1 {
+    @include text-format(48, 48, 900);
+}
+
+h2 {
+    @include text-format(32, 36, 900);
+    text-align: center;
+}
+
+p {
+    @include text-format(16, 26, 500);
+    color: $primary-text-color;
+    text-align: center;
+}
