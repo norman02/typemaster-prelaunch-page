@@ -1,0 +1,32 @@
+header {
+
+    margin-top: toRem(64);
+    overflow: hidden;
+
+    p {
+        text-align: left;
+    }
+    
+    .cta {
+        @extend %page-margin;
+        margin-top: toRem(39);
+        margin-bottom: toRem(64);
+        
+        .btn {
+            display: inline;
+        }
+
+        p {
+            display: inline;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+    img {
+        position: relative;
+        width: toRem(372);
+        border-radius: 20px;
+        right: -6.4%;
+    }
+}
