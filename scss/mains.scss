@@ -1,7 +1,11 @@
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 
 @import 'base/reset';
 @import 'base/typography';
 
+@import 'layouts/nav';
+
+@import 'pages/home';

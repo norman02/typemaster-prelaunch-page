@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;900&display=swap");
+nav {
+  margin: 0 6.4%;
+}
+
 * {
   margin: 0;
   padding: 0%;
@@ -43,5 +47,16 @@ p {
   font-weight: 500;
   color: #7b8bad;
   text-align: center;
+}
+
+nav {
+  margin-top: 1.4375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  background-color: white;
 }
 /*# sourceMappingURL=mains.css.map */

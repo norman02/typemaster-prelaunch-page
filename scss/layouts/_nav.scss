@@ -1,0 +1,7 @@
+nav {
+    @extend %page-margin;
+    margin-top: toRem(23);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
