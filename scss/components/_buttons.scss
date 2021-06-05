@@ -1,0 +1,36 @@
+
+.btn {
+    @include text-format(16, 16, 700);
+    @extend %transition;
+    display: inline-block;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: $gray;
+    border-radius: 8px;
+    padding: toEm(11) toEm(14.5) toEm(18) toEm(13.5);
+
+    &:hover {
+        color: $white;
+        background-color: $dark-blue;
+    }
+
+    &:focus {
+        color: $white;
+        background-color: $dark-blue;
+    }
+}
+
+.btn--orange {
+    background-color: $orange;
+    color: $white;
+
+    &:hover {
+        color: $white;
+        background-color: $light-orange;
+    }
+
+    &:focus {
+        color: $white;
+        background-color: $light-orange;
+    }
+}
