@@ -1,3 +1,7 @@
 @function toRem($pixel) {
     @return ($pixel / 16) + rem;
 }
+
+@function toEm($pixel) {
+    @return ($pixel / 16) + em;
+}
