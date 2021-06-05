@@ -5,6 +5,7 @@ body {
 }
 
 h1, h2 {
+    @extend %page-margin;
     color: $header-text-color;
     text-transform: uppercase;
 }
@@ -20,6 +21,8 @@ h2 {
 
 p {
     @include text-format(16, 26, 500);
+    @extend %page-margin;
+    margin-top: toRem(22);
     color: $primary-text-color;
     text-align: center;
 }
