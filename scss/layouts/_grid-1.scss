@@ -1,0 +1,40 @@
+.grid--2 {
+    margin-top: toRem(24);
+
+    .img {
+        border-radius: 20px;
+    }
+
+    .mask {
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        width: toRem(129);
+        left: toRem(-22); 
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background: $orange;
+            opacity: 0.75;
+        }
+    }
+
+    .img--1 {
+        position: relative;
+        width: toRem(129);   
+    }
+
+    .img--2 {
+        width: toRem(220);
+    }
+
+    h2 {
+        margin-top: toRem(75);
+    }
+}
