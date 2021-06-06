@@ -1,32 +1,73 @@
 header {
-
     margin-top: toRem(64);
     overflow: hidden;
 
+
+    @include media-md {
+        margin-top: toRem(62);
+        margin-left: 5.08%;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 60% auto;
+    }
+
+    h1 {
+        max-width: toRem(339);
+
+        @include media-md {
+            margin: 0;
+        }
+    }
+
     p {
+        max-width: toRem(500);
         text-align: left;
+
+        @include media-md {
+            margin-left: 0
+        }
     }
     
     .cta {
         @extend %page-margin;
         margin-top: toRem(39);
         margin-bottom: toRem(64);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include media-md {
+            max-width: toRem(350);
+            margin-left: 0;
+        }
+
         
         .btn {
             display: inline;
+
         }
 
         p {
-            display: inline;
+            margin: 0;
             font-weight: bold;
             text-transform: uppercase;
         }
     }
 
-    img {
+    .img {
         position: relative;
+        background-image: url('../assets/mobile/image-keyboard.jpg');
+        background-size: contain;
         width: toRem(372);
+        height: toRem(331);
         border-radius: 20px;
         right: -6.4%;
+
+        @include media-md {
+            background-image: url('../../assets/tablet/image-keyboard.jpg');
+            width: toRem(478);
+            height: toRem(425);
+            right: -5.08%
+        }
     }
 }

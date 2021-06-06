@@ -76,6 +76,12 @@ body {
   padding: 0.6875em 0.90625em 1.125em 0.84375em;
 }
 
+@media screen and (min-width: 600px) {
+  .btn {
+    padding: 1em 1.6875em 1.4375em 1.625em;
+  }
+}
+
 .btn:hover {
   color: white;
   background-color: #162441;
@@ -147,13 +153,50 @@ header {
   overflow: hidden;
 }
 
+@media screen and (min-width: 600px) {
+  header {
+    margin-top: 3.875rem;
+    margin-left: 5.08%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 60% auto;
+  }
+}
+
+header h1 {
+  max-width: 21.1875rem;
+}
+
+@media screen and (min-width: 600px) {
+  header h1 {
+    margin: 0;
+  }
+}
+
 header p {
+  max-width: 31.25rem;
   text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+  header p {
+    margin-left: 0;
+  }
 }
 
 header .cta {
   margin-top: 2.4375rem;
   margin-bottom: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) {
+  header .cta {
+    max-width: 21.875rem;
+    margin-left: 0;
+  }
 }
 
 header .cta .btn {
@@ -161,16 +204,28 @@ header .cta .btn {
 }
 
 header .cta p {
-  display: inline;
+  margin: 0;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-header img {
+header .img {
   position: relative;
+  background-image: url("../assets/mobile/image-keyboard.jpg");
+  background-size: contain;
   width: 23.25rem;
+  height: 20.6875rem;
   border-radius: 20px;
   right: -6.4%;
+}
+
+@media screen and (min-width: 600px) {
+  header .img {
+    background-image: url("../../assets/tablet/image-keyboard.jpg");
+    width: 29.875rem;
+    height: 26.5625rem;
+    right: -5.08%;
+  }
 }
 
 footer {
