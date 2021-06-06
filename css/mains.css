@@ -91,6 +91,34 @@ p {
   background-color: #ff9b61;
 }
 
+.card {
+  text-align: center;
+}
+
+.card .img-container {
+  display: inline-block;
+  width: 4.0625rem;
+  height: 4.0625rem;
+  background-color: #f26818;
+  background-image: url("../assets/shared/icon-compatible.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+  margin-bottom: 3rem;
+}
+
+.card--2 .img-container {
+  background-image: url("../assets/shared/icon-bluetooth.svg");
+}
+
+.card--3 .img-container {
+  background-image: url("../assets/shared/icon-battery.svg");
+}
+
+.card--4 .img-container {
+  background-image: url("../assets/shared/icon-light.svg");
+}
+
 nav {
   margin-top: 1.4375rem;
   display: flex;
@@ -172,5 +200,13 @@ header img {
 
 body {
   background-color: white;
+}
+
+.grid--3 {
+  margin-top: 2.9375rem;
+}
+
+.card {
+  margin-top: 4.4375rem;
 }
 /*# sourceMappingURL=mains.css.map */
