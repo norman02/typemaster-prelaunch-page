@@ -1,6 +1,15 @@
 .grid--2 {
     margin-top: toRem(24);
 
+    @include media-md {
+        margin: toRem(40) 5.08% 0 5.08%;
+        display: grid;
+        column-gap: toRem(30);
+        row-gap: toRem(72);
+        align-items: center;
+        grid-template-areas: 'one two' 'three four';
+    }
+
     .img {
         border-radius: 20px;
     }
@@ -9,8 +18,11 @@
         display: inline-block;
         overflow: hidden;
         position: relative;
-        width: toRem(129);
         left: toRem(-22); 
+
+        @include media-md {
+            left: 0;
+        }
 
         &:after {
             content: "";
@@ -27,14 +39,54 @@
 
     .img--1 {
         position: relative;
-        width: toRem(129);   
+        display: inline-block;
+        width: toRem(129); 
+        height: toRem(193); 
+        background-image: url('../assets/mobile/image-phone-and-keyboard.jpg'); 
+        background-size: contain;
+
+        @include media-md {
+            grid-area: one;
+            margin: 0;
+            width: toRem(214);
+            height: toRem(320);
+            background-image: url('../assets/tablet/image-phone-and-keyboard.jpg');
+        }
     }
 
     .img--2 {
+        display: inline-block;
         width: toRem(220);
+        height: toRem(193);
+        background-image: url('../assets/mobile/image-glass-and-keyboard.jpg');
+        background-size: contain;
+
+        @include media-md {
+            margin: 0%;
+            grid-area: two;
+            width: toRem(445);
+            height: toRem(320);
+            background-image: url('../assets/tablet/image-glass-and-keyboard.jpg');
+        }
     }
 
     h2 {
         margin-top: toRem(75);
+
+        @include media-md {
+            grid-area: three;
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    p {
+
+        @include media-md {
+            grid-area: four;
+            margin: 0 auto;
+            text-align: left;
+            max-width: toRem(400);
+        }
     }
 }
