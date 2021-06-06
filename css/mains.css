@@ -51,6 +51,12 @@ h2 {
   text-align: center;
 }
 
+@media screen and (min-width: 600px) {
+  h2 {
+    text-align: left;
+  }
+}
+
 p {
   font-size: 1rem;
   line-height: 1.625rem;
@@ -58,6 +64,12 @@ p {
   margin-top: 1.375rem;
   color: #7b8bad;
   text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  p {
+    text-align: left;
+  }
 }
 
 body {
@@ -111,6 +123,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 600px) {
+  .card {
+    text-align: left;
+  }
+}
+
 .card .img-container {
   display: inline-block;
   width: 4.0625rem;
@@ -121,6 +139,20 @@ body {
   background-position: center;
   border-radius: 16px;
   margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+  .card h2 {
+    margin: 0;
+    max-width: 15rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card p {
+    margin-left: 0;
+    max-width: 17.5625rem;
+  }
 }
 
 .card--2 .img-container {
@@ -339,7 +371,22 @@ footer {
   margin-top: 2.9375rem;
 }
 
+@media screen and (min-width: 600px) {
+  .grid--3 {
+    margin-left: 5.08%;
+    margin-top: 5.3125rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .grid--3 .card {
   margin-top: 4.4375rem;
+}
+
+@media screen and (min-width: 600px) {
+  .grid--3 .card {
+    margin-top: 4.9375rem;
+  }
 }
 /*# sourceMappingURL=mains.css.map */

@@ -1,5 +1,10 @@
 .card {
     text-align: center;
+
+    @include media-md {
+        text-align: left;
+    }
+
     .img-container {
         display: inline-block;
         width: toRem(65);
@@ -10,7 +15,21 @@
         background-position: center;
         border-radius: 16px;
         margin-bottom: toRem(48);
-    }   
+    }  
+    
+    h2 {
+        @include media-md {
+            margin: 0;
+            max-width: toRem(240);
+        }
+    }
+
+    p {
+        @include media-md {
+            margin-left: 0;
+            max-width: toRem(281);
+        }
+    }
 }
 
 .card--2 {

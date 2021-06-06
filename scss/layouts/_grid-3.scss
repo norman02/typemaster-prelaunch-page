@@ -1,7 +1,18 @@
 .grid--3 {
     margin-top: toRem(47);
+
+    @include media-md {
+        margin-left: 5.08%;
+        margin-top: toRem(85);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     
     .card {
         margin-top: toRem(71);
+
+        @include media-md {
+            margin-top: toRem(79);
+        }
     }
 }

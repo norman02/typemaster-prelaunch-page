@@ -12,11 +12,16 @@ h1, h2 {
 
 h1 {
     @include text-format(48, 48, 900);
+
 }
 
 h2 {
     @include text-format(32, 36, 900);
     text-align: center;
+
+    @include media-md {
+        text-align: left;
+    }
 }
 
 p {
@@ -25,4 +30,8 @@ p {
     margin-top: toRem(22);
     color: $primary-text-color;
     text-align: center;
+
+    @include media-md {
+        text-align: left;
+    }
 }
