@@ -300,6 +300,14 @@ header .img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  header .img {
+    background-image: url("../assets/desktop/image-keyboard.jpg");
+    width: 33.75rem;
+    height: 30rem;
+  }
+}
+
 header .rectangle {
   position: relative;
   display: none;
@@ -307,8 +315,8 @@ header .rectangle {
   height: 240px;
   background: #E8EFF2 0% 0% no-repeat padding-box;
   border-radius: 20px;
-  margin-left: -35%;
-  right: -35%;
+  margin-left: -40%;
+  right: -45%;
 }
 
 @media screen and (min-width: 1200px) {

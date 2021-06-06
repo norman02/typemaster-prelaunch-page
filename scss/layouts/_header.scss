@@ -83,12 +83,17 @@ header {
             background-image: url('../assets/tablet/image-keyboard.jpg');
             width: toRem(478);
             height: toRem(425);
-            right: -35%;
-            
+            right: -35%;   
         }
 
         @include media-md {
             right: -5.08%
+        }
+
+        @include media-lg {
+            background-image: url('../assets/desktop/image-keyboard.jpg');
+            width: toRem(540);
+            height: toRem(480);
         }
     }
 
@@ -99,8 +104,8 @@ header {
         height: 240px;
         background: #E8EFF2 0% 0% no-repeat padding-box;
         border-radius: 20px;
-        margin-left: -35%;
-        right: -35%;
+        margin-left: -40%;
+        right: -45%;
 
         @include media-lg {
             display: inline-block;
