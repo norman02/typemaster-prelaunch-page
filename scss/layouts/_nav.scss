@@ -8,4 +8,8 @@ nav {
     @include media-md {
         margin-top: toRem(49);
     }
+
+    @include media-lg {
+        margin-top: toRem(64);
+    }
 }
