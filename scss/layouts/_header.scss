@@ -64,7 +64,7 @@ header {
         right: -6.4%;
 
         @include media-md {
-            background-image: url('../../assets/tablet/image-keyboard.jpg');
+            background-image: url('../assets/tablet/image-keyboard.jpg');
             width: toRem(478);
             height: toRem(425);
             right: -5.08%

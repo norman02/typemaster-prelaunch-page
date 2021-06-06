@@ -221,7 +221,7 @@ header .img {
 
 @media screen and (min-width: 600px) {
   header .img {
-    background-image: url("../../assets/tablet/image-keyboard.jpg");
+    background-image: url("../assets/tablet/image-keyboard.jpg");
     width: 29.875rem;
     height: 26.5625rem;
     right: -5.08%;
