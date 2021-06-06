@@ -7,8 +7,19 @@ header {
         margin-top: toRem(62);
         margin-left: 5.08%;
         display: grid;
-        align-items: center;
-        grid-template-columns: 60% auto;
+        grid-template-columns: auto auto;
+    }
+
+    @include media-lg {
+        margin: toRem(62) 0 0 11.46%;
+        grid-template-columns: auto auto auto;
+        column-gap: toRem(30);
+    }
+
+    .cell {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     h1 {
@@ -16,6 +27,10 @@ header {
 
         @include media-md {
             margin: 0;
+        }
+
+        @include media-lg {
+            @include text-format(56, 56, 900);
         }
     }
 
@@ -32,6 +47,7 @@ header {
         @extend %page-margin;
         margin-top: toRem(39);
         margin-bottom: toRem(64);
+        min-width: toRem(315);
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -73,6 +89,21 @@ header {
 
         @include media-md {
             right: -5.08%
+        }
+    }
+
+    .rectangle {
+        position: relative;
+        display: none;
+        width: 255px;
+        height: 240px;
+        background: #E8EFF2 0% 0% no-repeat padding-box;
+        border-radius: 20px;
+        margin-left: -35%;
+        right: -35%;
+
+        @include media-lg {
+            display: inline-block;
         }
     }
 }

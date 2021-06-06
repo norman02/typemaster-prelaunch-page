@@ -9,6 +9,12 @@ h1, h2, p, nav, header .cta {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  h1, h2, p, nav, header .cta {
+    margin: 0 11.46%;
+  }
+}
+
 .btn {
   transition: 0.8s;
 }
@@ -180,6 +186,12 @@ nav {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  nav {
+    margin-top: 4rem;
+  }
+}
+
 header {
   margin-top: 4rem;
   overflow: hidden;
@@ -190,9 +202,22 @@ header {
     margin-top: 3.875rem;
     margin-left: 5.08%;
     display: grid;
-    align-items: center;
-    grid-template-columns: 60% auto;
+    grid-template-columns: auto auto;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    margin: 3.875rem 0 0 11.46%;
+    grid-template-columns: auto auto auto;
+    column-gap: 1.875rem;
+  }
+}
+
+header .cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header h1 {
@@ -202,6 +227,14 @@ header h1 {
 @media screen and (min-width: 700px) {
   header h1 {
     margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-weight: 900;
   }
 }
 
@@ -219,6 +252,7 @@ header p {
 header .cta {
   margin-top: 2.4375rem;
   margin-bottom: 4rem;
+  min-width: 19.6875rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -263,6 +297,23 @@ header .img {
 @media screen and (min-width: 700px) {
   header .img {
     right: -5.08%;
+  }
+}
+
+header .rectangle {
+  position: relative;
+  display: none;
+  width: 255px;
+  height: 240px;
+  background: #E8EFF2 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  margin-left: -35%;
+  right: -35%;
+}
+
+@media screen and (min-width: 1200px) {
+  header .rectangle {
+    display: inline-block;
   }
 }
 
