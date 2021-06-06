@@ -261,8 +261,17 @@ header .img {
 }
 
 footer {
-  margin-top: 6.4375rem;
-  margin-bottom: 3.5625rem;
+  margin: 6.4375rem 0 3.5625rem 0;
+}
+
+@media screen and (min-width: 600px) {
+  footer {
+    margin: 9.3125rem auto 3.125rem auto;
+  }
+}
+
+footer .rights {
+  text-align: center;
 }
 
 .grid--2 {

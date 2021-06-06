@@ -1,4 +1,11 @@
 footer {
-    margin-top: toRem(103);
-    margin-bottom: toRem(57);
+    margin: toRem(103) 0 toRem(57) 0;
+
+    @include media-md {
+        margin: toRem(149) auto toRem(50) auto;
+    }
+
+    .rights {
+        text-align: center;
+    }
 }
