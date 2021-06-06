@@ -157,6 +157,11 @@ header img {
   right: -6.4%;
 }
 
+footer {
+  margin-top: 6.4375rem;
+  margin-bottom: 3.5625rem;
+}
+
 .grid--2 {
   margin-top: 1.5rem;
 }
