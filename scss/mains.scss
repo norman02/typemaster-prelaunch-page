@@ -5,6 +5,7 @@
 
 @import 'base/reset';
 @import 'base/typography';
+@import 'base/global';
 
 @import 'components/buttons';
 @import 'components/feature-cards';
@@ -12,7 +13,8 @@
 @import 'layouts/nav';
 @import 'layouts/header';
 @import 'layouts/footer';
-@import 'layouts/grid-1';
+@import 'layouts/grid-2';
+@import 'layouts/grid-3';
 
 @import 'pages/home';
 

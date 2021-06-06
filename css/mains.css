@@ -54,6 +54,10 @@ p {
   text-align: center;
 }
 
+body {
+  background-color: white;
+}
+
 .btn {
   font-size: 1rem;
   line-height: 1rem;
@@ -203,15 +207,11 @@ footer {
   margin-top: 4.6875rem;
 }
 
-body {
-  background-color: white;
-}
-
 .grid--3 {
   margin-top: 2.9375rem;
 }
 
-.card {
+.grid--3 .card {
   margin-top: 4.4375rem;
 }
 /*# sourceMappingURL=mains.css.map */
