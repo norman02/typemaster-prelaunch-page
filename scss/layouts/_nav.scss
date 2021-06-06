@@ -4,4 +4,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    @include media-md {
+        margin-top: toRem(49);
+    }
 }

@@ -1,5 +1,13 @@
 %page-margin {
     margin: 0 6.4%;
+
+    @include media-md {
+        margin: 0 5.08%;
+    }
+}
+
+%med-margin {
+    margin: 0 5.08%;
 }
 
 %transition {

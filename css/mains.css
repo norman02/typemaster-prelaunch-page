@@ -3,6 +3,12 @@ h1, h2, p, nav, header .cta {
   margin: 0 6.4%;
 }
 
+@media screen and (min-width: 600px) {
+  h1, h2, p, nav, header .cta {
+    margin: 0 5.08%;
+  }
+}
+
 .btn {
   transition: 0.8s;
 }
@@ -128,6 +134,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  nav {
+    margin-top: 3.0625rem;
+  }
 }
 
 header {
