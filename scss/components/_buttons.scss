@@ -9,6 +9,10 @@
     border-radius: 8px;
     padding: toEm(11) toEm(14.5) toEm(18) toEm(13.5);
 
+    @include media-md {
+        padding: toEm(16) toEm(27) toEm(23) toEm(26);
+    }
+
     &:hover {
         color: $white;
         background-color: $dark-blue;
