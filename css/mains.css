@@ -82,6 +82,14 @@ body {
   background-color: white;
 }
 
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .btn {
   font-size: 1rem;
   line-height: 1rem;
@@ -215,6 +223,13 @@ header {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 header .cell {
   display: flex;
   flex-direction: column;
@@ -322,6 +337,12 @@ header .rectangle {
 @media screen and (min-width: 1200px) {
   header .rectangle {
     display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  header .rectangle {
+    display: none;
   }
 }
 
@@ -498,6 +519,12 @@ footer .rights {
     position: absolute;
     bottom: 0;
     left: -100px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .grid--2 .rectangle {
+    display: none;
   }
 }
 

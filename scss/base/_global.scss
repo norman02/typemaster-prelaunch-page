@@ -1,3 +1,11 @@
 body {
     background-color: $bg-color;
 }
+
+@include media-xl {
+    .container {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

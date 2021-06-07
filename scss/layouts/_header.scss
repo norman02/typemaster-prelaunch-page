@@ -17,6 +17,11 @@ header {
         column-gap: toRem(30);
     }
 
+    @include media-xl {
+        display: flex;
+        justify-content: center;
+    }
+
     .cell {
         display: flex;
         flex-direction: column;
@@ -109,6 +114,10 @@ header {
 
         @include media-lg {
             display: inline-block;
+        }
+
+        @include media-xl {
+            display: none;
         }
     }
 }

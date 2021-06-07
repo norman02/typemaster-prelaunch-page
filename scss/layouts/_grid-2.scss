@@ -136,5 +136,7 @@
             bottom: 0;
             left: -100px;
         }
+
+        @include media-xl {display: none;}
     }
 }
