@@ -11,8 +11,10 @@
     }
 
     @include media-lg {
-        margin: toRem(138) 11.46% 0 -11.46%;
+        position: relative;
+        margin: toRem(138) 11.46% 0 0;
         row-gap: 0;
+        grid-template-columns: 11.46% 1fr 1fr 1fr;
         grid-template-areas: 'rect one two .' 'rect one two three' 'rect one two four' 'rect one two .';
         align-items: flex-end;
     }
@@ -130,7 +132,9 @@
 
         @include media-lg {
             display: inline-block;
-            position: relative;
+            position: absolute;
+            bottom: 0;
+            left: -100px;
         }
     }
 }

@@ -208,8 +208,9 @@ header {
 
 @media screen and (min-width: 1200px) {
   header {
+    position: relative;
     margin: 3.875rem 0 0 11.46%;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 11.46%;
     column-gap: 1.875rem;
   }
 }
@@ -309,14 +310,13 @@ header .img {
 }
 
 header .rectangle {
-  position: relative;
+  position: absolute;
   display: none;
   width: 255px;
   height: 240px;
   background: #E8EFF2 0% 0% no-repeat padding-box;
   border-radius: 20px;
-  margin-left: -40%;
-  right: -45%;
+  right: -11.46%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -356,8 +356,10 @@ footer .rights {
 
 @media screen and (min-width: 1200px) {
   .grid--2 {
-    margin: 8.625rem 11.46% 0 -11.46%;
+    position: relative;
+    margin: 8.625rem 11.46% 0 0;
     row-gap: 0;
+    grid-template-columns: 11.46% 1fr 1fr 1fr;
     grid-template-areas: 'rect one two .' 'rect one two three' 'rect one two four' 'rect one two .';
     align-items: flex-end;
   }
@@ -493,7 +495,9 @@ footer .rights {
 @media screen and (min-width: 1200px) {
   .grid--2 .rectangle {
     display: inline-block;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: -100px;
   }
 }
 

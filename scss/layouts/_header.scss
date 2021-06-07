@@ -11,8 +11,9 @@ header {
     }
 
     @include media-lg {
+        position: relative;
         margin: toRem(62) 0 0 11.46%;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: 1fr 1fr 11.46%;
         column-gap: toRem(30);
     }
 
@@ -98,14 +99,13 @@ header {
     }
 
     .rectangle {
-        position: relative;
+        position: absolute;
         display: none;
         width: 255px;
         height: 240px;
         background: #E8EFF2 0% 0% no-repeat padding-box;
         border-radius: 20px;
-        margin-left: -40%;
-        right: -45%;
+        right: -11.46%;
 
         @include media-lg {
             display: inline-block;
