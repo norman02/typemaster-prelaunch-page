@@ -510,6 +510,13 @@ footer .rights {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .grid--3 {
+    margin: 10.5rem 11.46% 0 11.46%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .grid--3 .card {
   margin-top: 4.4375rem;
 }
